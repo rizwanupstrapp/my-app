@@ -1,0 +1,90 @@
+/* we will explain what these classes do next! */
+p {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: "antialiased";
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: "antialiased";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bitter", serif;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.slider-img-w {
+  height: 500px !important;
+}
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+.vs__dropdown-toggle {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 0.5rem;
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  position: relative;
+}
+.vs__dropdown-toggle,
+.vs__search,
+.vs__actions {
+  background-color: rgb(249 250 251);
+  cursor: pointer;
+}
+.vs__selected-options > input:focus-visible {
+  border: none !important;
+  outline: none !important;
+}
+
+.vs__dropdown-menu {
+position: absolute;
+top: 85%;
+background: white;
+padding: 16px;
+border: 1px solid #D1D5DB;
+border-radius: 6px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.dropdown-menu {
+  display: block;
+}
+/* .dropdown-menu ul li:hover {
+  background: #f89d35;
+} */
+
+.dropdown-menu:hover {
+  cursor: pointer;
+}
+
+.dropdown .dropdown-menu ul {
+  visibility: hidden;
+  display: none;
+}
+
+.dropdown .dropdown-menu:hover > ul,
+.dropdown .dropdown-menu ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transition-duration: 10s;
+}
+
+
