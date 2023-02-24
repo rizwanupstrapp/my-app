@@ -1,15 +1,11 @@
 <template>
   <div v-if="countries.length">
-    <!-- <div>
-      <Search @update:search="updatedSearchText" />
-    </div> -->
 
     <TableAction
       :moduleName="moduleName"
       :columns="columns"
       :items="countries"
     />
-    <!-- :itemsPerPage="pagination.perPage" -->
     <Pagination :pagination.sync="pagination" />
   </div>
 </template>
@@ -18,18 +14,16 @@
 import TableAction from "@/components/tables/tableAction.vue";
 import CountryService from "@/services/country.service";
 import Pagination from "@/components/utils/Pagination.vue";
-// import Search from "@/components/utils/Search.vue";
 
 export default {
   name: "CountryList",
   components: {
-    // Search,
     TableAction,
     Pagination,
   },
   data() {
     return {
-      moduleName: "Country List",
+      moduleName: "Country",
       countries: [],
       searchTextQuery: "",
       pagination: {
