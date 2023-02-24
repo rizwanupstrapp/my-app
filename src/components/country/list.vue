@@ -1,6 +1,5 @@
 <template>
   <div v-if="countries.length">
-
     <TableAction
       :moduleName="moduleName"
       :columns="columns"
@@ -23,7 +22,7 @@ export default {
   },
   data() {
     return {
-      moduleName: "Country",
+      moduleName: "Country Master",
       countries: [],
       searchTextQuery: "",
       pagination: {
